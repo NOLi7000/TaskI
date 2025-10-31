@@ -4,7 +4,7 @@ class Watch {
         System.out.println("The watch shows the current timing.");
     }
     void displayDetails() {
-        System.out.println("This is a Normal wristwatch.");
+        System.out.println("These are Normal wristwatches.");
     }
     void displayDetails(String brand) {
         System.out.println("Watch Brands: " + brand);
