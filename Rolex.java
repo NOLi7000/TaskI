@@ -1,0 +1,43 @@
+class Watch {
+ 
+    void performAction() {
+        System.out.println("The watch shows the current time.");
+    }
+    void displayDetails() {
+        System.out.println("This is a standard wristwatch.");
+    }
+    void displayDetails(String brand) {
+        System.out.println("Watch Brand: " + brand);
+    }
+}
+class DigitalWatch extends Watch {
+    @Override
+    void performAction() {
+        System.out.println("The digital watch displays time using digits and has an alarm feature.");
+    }
+}
+class AnalogWatch extends Watch {
+    @Override
+    void performAction() {
+        System.out.println("The analog watch shows time using hour, minute, and second hands.");
+    }
+}
+public class Rolex {
+    static void showAction(Watch w) {
+        w.performAction(); 
+    }
+    public static void main(String[] args) {
+        DigitalWatch digital = new DigitalWatch();
+        AnalogWatch analog = new AnalogWatch();
+        System.out.println("=== Method Overriding ===");
+        digital.performAction();  
+        analog.performAction();   
+        System.out.println("\n=== Method Overloading ===");
+        digital.displayDetails();                 
+        digital.displayDetails("Casio");          
+        analog.displayDetails("Rolex");           
+        System.out.println("\n=== Runtime Polymorphism ===");
+        showAction(digital);  
+        showAction(analog);   
+    }
+}
