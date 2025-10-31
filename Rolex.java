@@ -13,7 +13,7 @@ class Watch {
 class DigitalWatch extends Watch {
     @Override
     void performAction() {
-        System.out.println("The digital watch shows time using digits and has an alarm feature.");
+        System.out.println("The digital watch shows time using digits and has an sound feature.");
     }
 }
 class AnalogWatch extends Watch {
