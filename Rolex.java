@@ -19,7 +19,7 @@ class DigitalWatch extends Watch {
 class AnalogWatch extends Watch {
     @Override
     void performAction() {
-        System.out.println("The analog watch shows time using hours, minutes, and second hands.");
+        System.out.println("The analog watch shows time using hours, minutes, and second hand.");
     }
 }
 public class Rolex {
