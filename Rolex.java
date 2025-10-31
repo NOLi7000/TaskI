@@ -7,7 +7,7 @@ class Watch {
         System.out.println("This is a Normal wristwatch.");
     }
     void displayDetails(String brand) {
-        System.out.println("Watch Brand: " + brand);
+        System.out.println("Watch Brands: " + brand);
     }
 }
 class DigitalWatch extends Watch {
