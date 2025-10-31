@@ -1,7 +1,7 @@
 class Watch {
  
     void performAction() {
-        System.out.println("The watch shows the current time.");
+        System.out.println("The watch shows the current timing.");
     }
     void displayDetails() {
         System.out.println("This is a standard wristwatch.");
